@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker Unix v16.9.1                   
 ******************************************************************************
->> Linked Mon Feb  5 17:44:03 2018
+>> Linked Fri Mar  9 00:44:23 2018
 
 OUTPUT FILE NAME:   <Ethernet.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 0000165d
@@ -39,7 +39,8 @@ section   page    origin      length       input sections
 
 .text      0    0000026c    0000155c     
                   0000026c    00000fb0     enc28j60.obj (.text)
-                  0000121c    00000250     main.obj (.text)
+                  0000121c    0000014c     main.obj (.text)
+                  00001368    00000104     initHw.obj (.text)
                   0000146c    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
                   00001508    0000007a                                   : memset_t2.obj (.text)
                   00001582    00000002                                   : mpu_init.obj (.text)
@@ -96,7 +97,8 @@ MODULE SUMMARY
     ./
        enc28j60.obj                   4016   0         41     
        tm4c123gh6pm_startup_ccs.obj   12     620       0      
-       main.obj                       592    0         0      
+       main.obj                       332    0         0      
+       initHw.obj                     260    0         0      
        wait.obj                       32     0         0      
     +--+------------------------------+------+---------+---------+
        Total:                         4652   620       41     
@@ -236,11 +238,11 @@ ffffffff  binit
 00000883  getEtherChecksum               
 000008bd  htons                          
 20000230  icmp                           
-0000121d  initHw                         
+00001369  initHw                         
 20000234  ip                             
 20000238  ipv4Address                    
 20000214  macAddress                     
-000012cb  main                           
+0000121d  main                           
 2000021c  main_func_sp                   
 0000146d  memcpy                         
 00001511  memset                         
@@ -301,8 +303,8 @@ address   name
 00001191  etherIncId                     
 000011a1  etherIsValidIp                 
 000011c7  etherSetIpAddress              
-0000121d  initHw                         
-000012cb  main                           
+0000121d  main                           
+00001369  initHw                         
 0000146d  __aeabi_memcpy                 
 0000146d  __aeabi_memcpy4                
 0000146d  __aeabi_memcpy8                

@@ -9,6 +9,8 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./enc28j60.obj" \
+"./initHw.obj" \
+"./led.obj" \
 "./main.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./wait.obj" \
@@ -154,8 +156,8 @@ Ethernet.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "enc28j60.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" "wait.obj" 
-	-$(RM) "enc28j60.d" "main.d" "tm4c123gh6pm_startup_ccs.d" "wait.d" 
+	-$(RM) "enc28j60.obj" "initHw.obj" "led.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" "wait.obj" 
+	-$(RM) "enc28j60.d" "initHw.d" "led.d" "main.d" "tm4c123gh6pm_startup_ccs.d" "wait.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
