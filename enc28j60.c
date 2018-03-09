@@ -26,7 +26,7 @@ uint8_t nextPacketLsb = 0x00;
 uint8_t nextPacketMsb = 0x00;
 uint8_t sequenceId = 1;
 uint32_t sum;
-uint8_t macAddress[6] = {2,3,4,5,6,7};
+uint8_t macAddress[6] = {1,2,3,4,5,6};//    {78,4f,43,7b,7d,53};
 uint8_t ipv4Address[4];
 
 // ------------------------------------------------------------------------------

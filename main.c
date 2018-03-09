@@ -94,7 +94,7 @@ int main(void)
 
     // init ethernet interface
     etherInit(ETHER_UNICAST | ETHER_BROADCAST | ETHER_HALFDUPLEX);
-    etherSetIpAddress(192,168,1,2);
+    etherSetIpAddress(10,219,128,2);
 
     // flash phy leds
     etherWritePhy(PHLCON, 0x0880);
