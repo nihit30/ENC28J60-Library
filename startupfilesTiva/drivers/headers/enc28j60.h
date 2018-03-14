@@ -1,5 +1,5 @@
 // ENC28J60 Driver
-// Jason Losh
+// Credits : Jason Losh
 
 //-----------------------------------------------------------------------------
 // Hardware Target
