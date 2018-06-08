@@ -1,6 +1,4 @@
-/*
- Credits : Dr. jason losh
- */
+
 
 #ifndef LED_H_
 #define LED_H_
