@@ -1,9 +1,4 @@
-/*
- * initHw.h
- *
- *  Created on: Mar 9, 2018
- *      Author: nihit
- */
+
 
 // Initialize Hardware
 
